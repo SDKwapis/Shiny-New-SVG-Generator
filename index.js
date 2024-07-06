@@ -1,5 +1,6 @@
-const shapes = require('./lib/shapes.js');
+const {Circle, Triangle, Square} = require('./lib/shapes.js');
 const inquirer = require("inquirer");
+const fs = require('fs');
 
 
 inquirer
@@ -7,7 +8,7 @@ inquirer
     {
         type: 'maxlength-input',
         name: 'title',
-        message: 'Enter three leters for your logo name.',
+        message: 'Enter up to three leters for your logo name.',
         maxLength: 3
     },
     {
