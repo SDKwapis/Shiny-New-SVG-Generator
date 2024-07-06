@@ -33,21 +33,21 @@ inquirer
       const square = new Square(data.shapeColor, data.textColor, data.title);
       fs.writeFile("./examples/logo.svg", square.makeSquare(), (err) => {
         if (err) throw err;
-        console.log("Your logo has been generated!");
+        console.log("Generated logo.svg");
       });
     } else if (data.shape === "Triangle") {
       console.log("Generating your logo now!");
       const triangle = new Triangle(data.shapeColor, data.textColor, data.title);
       fs.writeFile("./examples/logo.svg", triangle.makeTriangle(), (err) => {
         if (err) throw err;
-        console.log("Your logo has been generated!");
+        console.log("Generated logo.svg");
       });
     } else if (data.shape === "Circle") {
       console.log("Generating your logo now!");
       const circle = new Circle(data.shapeColor, data.textColor, data.title);
       fs.writeFile("./examples/logo.svg", circle.makeCircle(), (err) => {
         if (err) throw err;
-        console.log("Your logo has been generated!");
+        console.log("Generated logo.svg");
       });
     } else {
       console.log("An error has occurred");
